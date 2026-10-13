@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(221, 56%, 53%);
+    background-image: linear-gradient( hsl(221, 56%, 53%),rgb(141, 209, 141));
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.header{
+     display: flex;
+     flex-flow: row nowrap;   
+     justify-content:space-between;
+     gap: 4px;
+}
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    padding: 20px;
+    background-color: #989898;
+    background-image: radial-gradient(rgba(159, 218, 223, 0.833),hsla(216, 75%, 51%, 0.715));
+    border: 2px solid whitesmoke;
+    border-radius:20px; 
+}
+input{
+    height: 50px;
+    width: 200px;
+    padding: 15px;
+    border-radius: 40px ;
+    border: 2px solid hsla(216, 75%, 51%, 0.715);;
+}
+.img{
+    width: 45px;
+    height:45px;
+    padding: 7px;
+    border: 2px solid hsla(216, 75%, 51%, 0.715);
+    background-color: whitesmoke;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.weather-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.default-weather{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center ;
+}
+.details{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.humidity,.wind-speed{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.weather-body,.error{
+    display: none;
+}
+.error{
+    margin-top: 10px;
+    margin-left: 9px;
+}
+header h1{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
